@@ -3,6 +3,9 @@ import { hot } from "react-hot-loader/root";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+/* interface declares an object's shape. It's similar to class in JS
+this file currently uses es5. In process of changing it over to es6
+ */
 interface Props {
   name: string;
 }

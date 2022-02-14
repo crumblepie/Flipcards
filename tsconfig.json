@@ -5,11 +5,11 @@
         "strict": true,
         "noImplicitReturns": true,
         "noImplicitAny": true,
-        "module": "es6",
+        "module": "es6", // or should we use commonjs
         "moduleResolution": "node",
         "target": "es5",
-        "allowJs": true,
-        "jsx": "react",
+        "allowJs": true, // set this to false to create a pure TS app otherwise this allows JS and TS
+        "jsx": "react", // adds support for jsx in .tsx files
     },
     "include": [
         "./src/**/*"
