@@ -1,9 +1,10 @@
 // import * as React from "react";
+
 const React = require("react"); 
 // import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 const {BiLeftArrow, BiRightArrow} = require("react-icons/bi")
-
-import { useState, useEffect } from "react";
+const {useState, useEffect} = require("react")
+// import { useState, useEffect } from "react";
 
 // export interface Props {
 //   question_title: string;

@@ -1,5 +1,6 @@
 import * as React from "react";
-import Timer from './Timer';
+// import Timer from './Timer';
+const Timer = require('./Timer'); 
 import { AiFillPlusCircle } from "react-icons/ai";
 
 const Nav = () => (
@@ -19,4 +20,5 @@ const Nav = () => (
   </div>
 );
 
-export default Nav;
+// export default Nav;
+module.exports = Nav; 

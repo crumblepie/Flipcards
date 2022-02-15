@@ -10,18 +10,24 @@ const jestDom = require('@testing-library/jest-dom');
 
 // import Main from "../src/components/Main";
 const Main = require('../src/components/Main')
+const Card = require('../src/components/Card')
 
 
 describe('React unit testing', () => {
 
-//basic component tests 
-it("super basic test", () => {
-    render(<Main></Main>)
-    expect(screen.getByRole('heading')).toHaveTextContent('CARD HEADING')
 
+it("Card component should render heading", () => {
+    render(<Card></Card>)
+    expect(screen.getByRole('heading')).toHaveTextContent('Guess the problem solving pattern')
 })
 
-//flashcard component test
+it("Card component should render buttons", () => {
+    render(<Card></Card>)
+    expect(screen.getAllByRole('button')).toEqual(expect.anything());
+})  
+
+
+// how do we test stateful components?
 
 }); 
 

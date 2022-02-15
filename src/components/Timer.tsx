@@ -11,4 +11,5 @@ const Timer = (props: any) => {
   return <div>Time Elapsed: 0:0{timer}</div>;
 };
 
-export default Timer;
+// export default Timer;
+module.exports = Timer; 

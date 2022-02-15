@@ -46,4 +46,5 @@ const Sidebar = () => {
 
 )};
 
-export default Sidebar;
+// export default Sidebar;
+module.exports = Sidebar; 

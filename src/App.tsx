@@ -8,12 +8,17 @@ import * as React from "react";
 // } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
 
-import Main from "./components/Main";
-import Nav from "./components/Nav";
-import Sidebar from "./components/Sidebar";
+// import Main from "./components/Main";
+const {Main} = require("./components/Main")
+// import Nav from "./components/Nav";
+const {Nav} = require("./components/Nav")
+// import Sidebar from "./components/Sidebar";
+const {Sidebar} = require("./components/Sidebar")
 
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap";
+require("bootstrap"); 
+// import "bootstrap/dist/css/bootstrap.min.css";
+require("bootstrap/dist/css/bootstrap.min.css")
 
 const App = () => (
   <div className='App'>
@@ -25,5 +30,5 @@ const App = () => (
   </div>
 );
 
-export default hot(App);
-// module.exports = hot(App)
+// export default hot(App);
+module.exports = hot(App)
