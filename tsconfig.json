@@ -5,7 +5,7 @@
         "strict": true,
         "noImplicitReturns": true,
         "noImplicitAny": true,
-        "module": "es6", // or should we use commonjs whats the difference
+        "module": "commonjs", // or should we use commonjs whats the difference
         "moduleResolution": "node",
         "target": "es5",
         "allowJs": true, // set this to false to create a pure TS app otherwise this allows JS and TS

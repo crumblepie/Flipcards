@@ -6,8 +6,8 @@
 // import '@testing-library/jest-dom'
 // import {App} from './src/App'
 
-test('full page rendering/navigating', ()=> {
+// test('full page rendering/navigating', ()=> {
     
 
 
-})
+// })

@@ -1,5 +1,7 @@
-import * as React from "react";
-import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+// import * as React from "react";
+const React = require("react"); 
+// import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+const {BiLeftArrow, BiRightArrow} = require("react-icons/bi")
 
 const Card = () => (
   <>
@@ -19,4 +21,5 @@ const Card = () => (
   </>
 );
 
-export default Card;
+// export default Card;
+module.exports = Card

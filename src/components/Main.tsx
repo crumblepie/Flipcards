@@ -1,5 +1,7 @@
-import * as React from "react";
-import Card from "./Card";
+// import * as React from "react";
+const React = require("react")
+const Card = require("./Card")
+// import Card from "./Card";
 
 const Main = () => (
   <>
@@ -10,4 +12,5 @@ const Main = () => (
   </>
 );
 
-export default Main;
+// export default Main;
+module.exports = Main
