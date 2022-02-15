@@ -14,8 +14,10 @@ SET row_security = off;
 CREATE TABLE public.algo-questions (
   "_id" serial PRIMARY KEY,
   "name" varchar NOT NULL,
-  "picture" varchar NOT NULL, 
-  "funfacts" varchar NOT NULL,
+  "difficulty" varchar NOT NULL,
+  "prompt" text NOT NULL, 
+  "solution" text NOT NULL,
+  "pattern" text NOT NULL
 ) WITH (
   OIDS=FALSE
 );
