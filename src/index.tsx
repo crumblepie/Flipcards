@@ -1,7 +1,8 @@
 import * as React from "react";
 // require("react"); 
 import * as ReactDOM from "react-dom";
-// import { BrowserRouter as Router } from "react-router-dom";
+import { store } from "./redux/store";
+import { Provider } from "react-redux";
 
 // import App from "./App";
 const {App} = require("./App")
@@ -9,8 +10,8 @@ const {App} = require("./App")
 require( "./styles.css")
 
 ReactDOM.render(
-  // <Router>
-  <App />,
-  // </Router>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
