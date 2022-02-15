@@ -6,7 +6,7 @@ const Home = () => (
     <>
       <div></div>
       <h1>Plant flash cards</h1>
-      <button onClick={() => navigate('/play')}>Start Now</button>
+      {/* <button onClick={() => navigate('/play')}>Start Now</button> */}
       <div></div>
     </>
 );

@@ -26,3 +26,4 @@ const App = () => (
 );
 
 export default hot(App);
+// module.exports = hot(App)

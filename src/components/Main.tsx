@@ -1,5 +1,6 @@
 // import * as React from "react";
-const React = require("react")
+// declare function require(name:string);
+import React = require("react")
 const Card = require("./Card")
 // import Card from "./Card";
 
