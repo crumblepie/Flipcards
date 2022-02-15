@@ -16,7 +16,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => (
-  <div className='app'>
+  <div className='App'>
     <Nav />
     <div id='bodyContainer'>
       <Sidebar />
