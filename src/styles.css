@@ -43,13 +43,13 @@ body {
   width: 100%;
 }
 
-.card {
+.main_card {
   display: flex;
   padding: 0;
   flex-direction: column;
   align-items: center;
   background-color: #7c3aed;
-  border-radius: 8px;
+  border-radius: 3%;
   width: 25rem;
   height: 30rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -87,11 +87,20 @@ body {
   height: 15%;
   font-size: 1.4rem;
   display: flex;
+  justify-content: center;
   align-items: center;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  z-index: 0;
 }
 
 .card-front {
   padding: 1.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .code-block {
@@ -99,20 +108,33 @@ body {
   background-color: black;
   color: aqua;
   padding: 0.5em;
+  font-size: 0.7em;
 }
 
 .question-title {
   margin-top: 0.5em;
-  padding-left: 0.5em;
-  font-size: 1.1em;
+  text-align: center;
+  /* padding-left: 0.5em; */
+  font-size: 1.3em;
   font-weight: 500;
+}
+
+.example_label {
+  font-size: 0.8em;
+  margin-top: 0.8em;
 }
 
 .card-footer {
   border: none;
   display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
+}
+
+.card-front > span {
+  display: inline-flex;
+  font-size: 0.9rem;
 }
 
 .card-input-box {
@@ -121,4 +143,14 @@ body {
 
 .card-nav-btns {
   border-radius: 8px;
+}
+
+#next-button {
+  display: inline-flex;
+  margin-left: 10%;
+}
+
+#back-button {
+  display: inline-flex;
+  margin-right: 10%;
 }
