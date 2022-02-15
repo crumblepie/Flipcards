@@ -7,7 +7,7 @@
         "noImplicitAny": true,
         "module": "commonjs", // or should we use commonjs whats the difference
         "moduleResolution": "node",
-        "target": "es5",
+        "target": "es6",
         "allowJs": true, // set this to false to create a pure TS app otherwise this allows JS and TS
         "jsx": "react", // adds support for jsx in .tsx files
         "esModuleInterop": true, //helps with compilation issues with ES6/commonJS syntax 
