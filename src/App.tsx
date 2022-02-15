@@ -1,24 +1,28 @@
 import * as React from "react";
+// import {
+//   Routes,
+//   Route,
+//   Switch,
+//   useLocation,
+//   useNavigate,
+// } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
+
+import Main from "./components/Main";
+import Nav from "./components/Nav";
+import Sidebar from "./components/Sidebar";
+
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-interface Props {
-  name: string;
-}
-
-class App extends React.Component<Props> {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <h1>Reinforcement Project</h1>
-        <button type='button' className='btn btn-primary'>
-          This is a bootstrap button
-        </button>
-      </>
-    );
-  }
-}
+const App = () => (
+  <div className='App'>
+    <Nav />
+    <div id='bodyContainer'>
+      <Sidebar />
+      <Main />
+    </div>
+  </div>
+);
 
 export default hot(App);
