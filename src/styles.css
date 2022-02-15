@@ -11,7 +11,7 @@ body {
   overflow: hidden;
 }
 
-.app {
+.App {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -25,6 +25,9 @@ body {
 .nav {
   border: 1px solid grey;
   height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sidebar {
@@ -42,22 +45,80 @@ body {
 
 .card {
   display: flex;
+  padding: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background-color: #7c3aed;
   border-radius: 8px;
   width: 25rem;
   height: 30rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  perspective: 1000px;
+  /* perspective: 1000px; */
 }
 
-input {
+/* input {
   display: none;
+} */
+
+.search {
+  border: 1px solid grey;
+  width: 100%;
 }
 
-:checked .card {
+.search:active {
+  outline: none;
+}
+/* 
+.card:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+} */
+
+/* :checked .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+} */
+
+.card-header {
+  background-color: aquamarine;
+  color: black;
+  margin: 0;
+  width: 100%;
+  height: 15%;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-front {
+  padding: 1.2rem;
+}
+
+.code-block {
+  display: block;
+  background-color: black;
+  color: aqua;
+  padding: 0.5em;
+}
+
+.question-title {
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.card-footer {
+  border: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.card-input-box {
+  width: 8em;
+}
+
+.card-nav-btns {
+  border-radius: 8px;
 }

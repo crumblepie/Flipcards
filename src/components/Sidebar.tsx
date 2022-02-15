@@ -3,7 +3,7 @@ import * as React from "react";
 const Sidebar = () => (
   <div className='sidebar'>
     Sidebar
-    <input type='text' placeholder='Search..' />
+    <input className='search' type='text' placeholder='Search..' />
   </div>
 );
 
