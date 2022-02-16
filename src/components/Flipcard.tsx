@@ -59,7 +59,7 @@ const FlipCard = () => {
     // ! is needed after expression to override TypeScript error
     // of Object being possibly null
     var card = document.getElementById("main_card")!;
-    card.classList.toggle("is-flipped");
+    card.classList.toggle("flipped");
   };
 
   return (
@@ -83,8 +83,11 @@ const FlipCard = () => {
               <div className='example_label'>Example 2:</div>
               <code className='code-block'>example_2</code>
 
-              <span className='card-footer'>
-                <button id='back-button' onClick={() => setNumber(number - 1)}>
+              {/* <span className='card-footer'>
+                <button
+                  id='btn back-button'
+                  onClick={() => setNumber(number - 1)}
+                >
                   Back
                 </button>
                 <form>
@@ -97,10 +100,13 @@ const FlipCard = () => {
                     placeholder='enter guess'
                   />
                 </form>
-                <button id='next-button' onClick={() => setNumber(number + 1)}>
+                <button
+                  id='btn next-button'
+                  onClick={() => setNumber(number + 1)}
+                >
                   Next
                 </button>
-              </span>
+              </span> */}
             </div>
           </div>
 

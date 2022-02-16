@@ -90,7 +90,7 @@ body {
   border-radius: 3%;
 }
 
-.main_card.is-flipped {
+.main_card.flipped {
   transform: rotateY(180deg);
 }
 

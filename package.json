@@ -13,7 +13,7 @@
     "start": "webpack serve --open --hot --mode development",
     "test": "jest",
     "ts-node": "ts-node",
-    "serve": "webpack --mode development & nodemon Server/src.ts "
+    "serve": "webpack --mode development & nodemon server/src.ts "
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
