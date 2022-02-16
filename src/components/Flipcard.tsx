@@ -34,7 +34,7 @@ const FlipCard = () => {
               <div className='question-meta-data'>
                 <span>Difficulty: {questions[flipCardIndex].difficulty}</span>
                 <span>
-                  Card {flipCardIndex+1} of {questions.length}
+                  Card {flipCardIndex + 1} of {questions.length}
                 </span>
               </div>
               <div className='question-content'>
@@ -42,9 +42,9 @@ const FlipCard = () => {
               </div>
 
               <div className='example_label'>Example 1:</div>
-              <code className='code-block'>example_1</code>
+              <code className='code-block'>Hello world!</code>
               <div className='example_label'>Example 2:</div>
-              <code className='code-block'>example_2</code>
+              <code className='code-block'>Hello from the other side</code>
             </div>
           </div>
 
