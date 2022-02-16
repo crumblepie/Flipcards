@@ -1,9 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
+
+interface algo {
+  _id: number;
+  name: string;
+  difficulty: string;
+  prompt: string;
+  solution: string;
+  pattern: string;
+}
+
+const questions: algo[] = [{_id: 1, name: 'test', difficulty: 'test', prompt: 'test', solution: 'test', pattern: 'test'}];
 
 const initialState = {
-  questions: ['question1', 'question2'],
-  count: 1
-};
+  questions: questions
+}
 
 export const questionSlice = createSlice({
   name: "question",
@@ -19,20 +30,14 @@ export const questionSlice = createSlice({
           state.questions = questions;
         })
     },
-    getQuestions: (state, action) => {
-      // fetch request to the backend and get DB
-      // fetch('backend URI')
-      // .then(data => {
-      //   const questions = JSON.parse(data);
-      //   state.questions = questions;
-      // })
-      state.count += 2;
-      state.questions = [`question-${action.payload}-${state.count}`, `question${state.count+1}`]
+    setQuestions: (state, action) => {
+      console.log('changing state', action.payload);
+      state.questions = <algo[]>action.payload;
     }
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addQuestion, getQuestions } = questionSlice.actions;
+export const { addQuestion, setQuestions } = questionSlice.actions;
 
 export default questionSlice.reducer;
