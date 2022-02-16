@@ -1,5 +1,7 @@
-import * as React from "react";
-import { useState, useEffect } from "react";
+// import * as React from "react";
+require("react")
+const {useState, useEffect} = require("react")
+// import { useState, useEffect } from "react";
 import "../stylesheets/Flipcard.css";
 // import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 

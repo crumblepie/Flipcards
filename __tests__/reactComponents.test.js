@@ -11,6 +11,7 @@ const jestDom = require('@testing-library/jest-dom');
 // import Main from "../src/components/Main";
 const Main = require('../src/components/Main')
 const Card = require('../src/components/Card')
+// import Card from "../src/components/Card"
 
 
 describe('React unit testing', () => {

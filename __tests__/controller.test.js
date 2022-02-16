@@ -28,8 +28,6 @@ describe ('database/controller unit tests', (done) => {
                         expect(Array.isArray(res.body.rows)).toEqual(true);
                         
                     })
-                    
-
             })
         })
     });
