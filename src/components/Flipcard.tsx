@@ -3,7 +3,7 @@ import * as React from "react";
 // const {useState, useEffect} = require("react")
 import { useState, useEffect } from "react";
 // import "../stylesheets/Flipcard.css";
-import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+// import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 // export interface Props {
 //   question_title: string;

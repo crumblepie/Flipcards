@@ -6,6 +6,8 @@ export const router = express.Router({
     strict: true
 });
 
+// export const router = express();
+
 router.post('/', (req: Request, res: Response) => {
     userController.create(req, res);
 });
@@ -13,8 +15,8 @@ router.post('/', (req: Request, res: Response) => {
 router.get('/',userController.read, (req: Request, res: Response) => {
     console.log("in user router")
     // userController.read(req, res);
-    console.log("this is res.locals", res.locals)
-    res.status(200).json(res.locals);
+    console.log("this is res.locals", res.locals.details)
+    res.status(200).json(res.locals.details);
 });
 
 router.patch('/', (req: Request, res: Response) => {
