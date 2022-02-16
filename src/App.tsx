@@ -10,12 +10,12 @@ import { hot } from "react-hot-loader/root";
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import type { RootState, AppDispatch } from './redux/store';
 
-// import Main from "./components/Main";
-const {Main} = require("./components/Main")
-// import Nav from "./components/Nav";
-const {Nav} = require("./components/Nav")
-// import Sidebar from "./components/Sidebar";
-const {Sidebar} = require("./components/Sidebar")
+import Main from "./components/Main";
+// const {Main} = require("./components/Main")
+import Nav from "./components/Nav";
+// const {Nav} = require("./components/Nav")
+import Sidebar from "./components/Sidebar";
+// const {Sidebar} = require("./components/Sidebar")
 
 // import "bootstrap";
 require("bootstrap"); 
@@ -37,5 +37,5 @@ const App = () => {
   </div>
 )};
 
-// export default hot(App);
-module.exports = hot(App)
+export default hot(App);
+// module.exports = hot(App)

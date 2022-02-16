@@ -1,4 +1,5 @@
-const React = require("react");
+// const React = require("react");
+import React from "react";
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 import type { RootState, AppDispatch } from '../redux/store';
@@ -40,5 +41,5 @@ const Sidebar = () => {
 
 )};
 
-// export default Sidebar;
-module.exports = Sidebar; 
+export default Sidebar;
+// module.exports = Sidebar; 
