@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-// const {configureStore} = require("@reduxjs/toolkit");
 
 import navigationReducer from "./navigationSlice";
 import questionReducer from "./questionSlice";

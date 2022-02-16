@@ -17,10 +17,10 @@ import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
 // const {Sidebar} = require("./components/Sidebar")
 
-// import "bootstrap";
-require("bootstrap"); 
-// import "bootstrap/dist/css/bootstrap.min.css";
-require("bootstrap/dist/css/bootstrap.min.css")
+import "bootstrap";
+// require("bootstrap"); 
+import "bootstrap/dist/css/bootstrap.min.css";
+// require("bootstrap/dist/css/bootstrap.min.css")
 
 export const useAppDispatch = () => useDispatch<AppDispatch>()
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
