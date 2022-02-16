@@ -1,27 +1,30 @@
 import * as React from "react";
 import { useState } from "react";
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import type { RootState, AppDispatch } from "../redux/store";
+export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+
+import { setFlipCardIndex } from "../redux/questionSlice";
+
 
 const Flipcard_Btns = () => {
-  const [number, setNumber] = useState(0);
-  const [total, setTotal] = useState(5);
+  const dispatch = useAppDispatch();
+
+  const flipCardIndex = useAppSelector((state) => state.question.flipCardIndex);
+
+  const changeIndex = (num: number) => {
+    dispatch(setFlipCardIndex(num));
+  }
 
   return (
     <>
       <span className='card-footer'>
-        <button id='btn back-button' onClick={() => setNumber(number - 1)}>
+        <button id='btn back-button' onClick={() => changeIndex(flipCardIndex-1)}>
           Back
         </button>
-        {/* <form>
-          <label style={{ marginRight: "8px", fontSize: "0.9em" }}>
-            Pattern:
-          </label>
-          <input
-            type='text'
-            className='card-input-box'
-            placeholder='enter guess'
-          />
-        </form> */}
-        <button id='btn next-button' onClick={() => setNumber(number + 1)}>
+
+        <button id='btn next-button' onClick={() => changeIndex(flipCardIndex+1)}>
           Next
         </button>
       </span>

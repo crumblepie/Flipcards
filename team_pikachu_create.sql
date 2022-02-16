@@ -11,8 +11,8 @@ SET row_security = off;
 
 
 
-CREATE TABLE public.algo-questions (
-  "_id" serial PRIMARY KEY,
+CREATE TABLE algos (
+  "_id" serial AUTO INCREMENT KEY,
   "name" varchar NOT NULL,
   "difficulty" varchar NOT NULL,
   "prompt" text NOT NULL, 
