@@ -51,7 +51,7 @@ import "../stylesheets/Flipcard.css";
 
 // export default Card;
 
-const Card = () => {
+const FlipCard = () => {
   const [number, setNumber] = useState(0);
   const [total, setTotal] = useState(5);
 
@@ -114,4 +114,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default FlipCard;
