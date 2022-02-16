@@ -7,7 +7,7 @@ const fileController = {};
 fileController.getAlgos = async (req, res, next) => {
   try {
     console.log('in fileController')
-    const qAlgos  = 'SELECT * FROM "public"."algo-questions" LIMIT 100';
+    const qAlgos  = 'SELECT * FROM "public"."public.algo-questions" LIMIT 100';
     const homeQuery = await db.query(qAlgos);
     const details = homeQuery.rows;
     res.locals = details;
