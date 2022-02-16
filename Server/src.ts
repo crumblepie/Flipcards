@@ -1,10 +1,17 @@
-
 import express from 'express';
+import cors from 'cors';
 import { userRouter } from './routes';
 
 const PORT = 3000; 
 
+const allowedOrigins = ['http://localhost:8080'];
+
+const options: cors.CorsOptions = {
+  origin: allowedOrigins
+};
+
 const app = express();
+app.use(cors(options));
 app.use(express.json());
 
 app.use('/', userRouter);
