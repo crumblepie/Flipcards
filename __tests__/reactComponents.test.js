@@ -26,22 +26,13 @@ it("Card component should render buttons", () => {
     expect(screen.getAllByRole('button')).toEqual(expect.anything());
 })  
 
+it("Card component should render input box", () => {
+    render(<Card></Card>)
+    expect(screen.getByRole('textbox')).toEqual(expect.anything());
+})  
 
 // how do we test stateful components?
 
 }); 
 
 
-// let container = null; 
-// beforeEach(() => {
-//     //creating target component for test rendering
-//     container = document.createElement("div");
-//     document.body.appendChild(container);
-// })
-
-// afterAll (() => {
-//     //remove test component from dom 
-//     unmountComponentAtNode(container); 
-//     container.remove();
-//     container = null;
-// })
