@@ -20,7 +20,7 @@ export class UserController extends CrudController {
 
     public async read(req: Request<import("express-serve-static-core").ParamsDictionary>, res: Response, next:express.NextFunction):Promise<void>   {
             console.log('in user controller')
-            const qAlgos  = 'SELECT * FROM "public"."public.algo-questions" LIMIT 100';
+            const qAlgos  = 'SELECT * FROM "public"."Algos" LIMIT 100';
             const homeQuery = await db.query(qAlgos);
             const details = homeQuery.rows;
             console.log(details);

@@ -8,23 +8,23 @@
 <p align="center">
     <strong>Supercharge your React development process</strong>
     <br />
-    <a href="https://github.com/crumblepie/reinforcement/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/crumblepie/flipcards/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/crumblepie/reinforcement/issues">Report Bug</a>
+    <a href="https://github.com/crumblepie/flipcards/issues">Report Bug</a>
     ·
-    <a href="https://github.com/crumblepie/reinforcement/issues">Request Feature</a>
+    <a href="https://github.com/crumblepie/flipcards/issues">Request Feature</a>
   </p>
 </div>
 
 <p align="center">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/crumblepie/reinforcement">
-  <img alt="GitHub license" src="https://img.shields.io/github/license/crumblepie/reinforcement?color=blue">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/crumblepie/reinforcement?color=yellow">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/crumblepie/reinforcement?color=blueviolet">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/crumblepie/reinforcement?style=social">  
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/crumblepie/flipcards">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/crumblepie/flipcards?color=blue">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/crumblepie/flipcards?color=yellow">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/crumblepie/flipcards?color=blueviolet">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/crumblepie/flipcards?style=social">  
   <br />
   <br />
   Give a ⭐️ if our project helped or interests you!
@@ -64,7 +64,8 @@ Coming soon.
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [React–Redux](https://react-redux.js.org)
 - [Redux Toolkit](https://redux-toolkit.js.org)
-- [GraphQL](https://graphql.org)
+- [PostgreSQL](https://www.postgresql.org)
+- [Axios](https://axios-http.com/docs/intro)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -72,7 +73,7 @@ Coming soon.
 
 The following instructions are to get started with Flipcard in development mode:
 
-1. Clone this repo `git clone https://github.com/crumblepie/reinforcement`
+1. Clone this repo `git clone https://github.com/crumblepie/flipcards`
 2. Install the dependencies `npm install`
 3. Run script for development mode `npm start`. Navigate to `localhost:8080` in your browser if the port does not automatically open.
 4. Build a production build `npm run build-prod`

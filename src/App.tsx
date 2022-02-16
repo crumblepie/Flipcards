@@ -1,11 +1,4 @@
 import * as React from "react";
-// import {
-//   Routes,
-//   Route,
-//   Switch,
-//   useLocation,
-//   useNavigate,
-// } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import type { RootState, AppDispatch } from './redux/store';
