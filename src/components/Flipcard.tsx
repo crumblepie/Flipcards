@@ -56,13 +56,11 @@ const Card = () => {
   const [total, setTotal] = useState(5);
 
   const toggleHandler = () => {
+    // ! is needed after expression to override TypeScript error
+    // of Object being possibly null
     var card = document.getElementById("main_card")!;
     card.classList.toggle("is-flipped");
   };
-
-  // card.addEventListener("click", function () {
-  //   card.classList.toggle("is-flipped");
-  // });
 
   return (
     <>
