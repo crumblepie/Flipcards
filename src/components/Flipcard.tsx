@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import "../stylesheets/Flipcard.css";
+// import "../stylesheets/Flipcard.css";
 // import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 // export interface Props {
