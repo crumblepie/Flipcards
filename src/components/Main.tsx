@@ -1,10 +1,10 @@
 import * as React from "react";
-import Card from "./Card";
+import Flipcard from "./Flipcard";
 
 const Main = () => (
   <>
     <div className='main'>
-      <Card />
+      <Flipcard />
     </div>
   </>
 );
