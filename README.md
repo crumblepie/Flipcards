@@ -91,16 +91,29 @@ The following instructions are to get started with Flipcard in development mode:
 5. Build a development build `npm run build-dev`
 6. Run unit tests `npm run test`
 
-### Add new questions to the database
+### Use your own database with Flipcards
 
-New questions can be added to the relational database with a sql command following this format:
+1. Replace the postgreSQL URI string in `model.js` with your own
+2. Create a new table using a statement such as the below:
+```sql
+CREATE TABLE Algos (
+  "_id" serial AUTO INCREMENT KEY,
+  "name" varchar NOT NULL,
+  "difficulty" varchar NOT NULL,
+  "prompt" text NOT NULL, 
+  "solution" text NOT NULL,
+  "pattern" text NOT NULL
+)
+```
+
+### Add new data to the database
+
+New questions can be added to our relational database with a sql command following this format:
 
 ```sql
-
 INSERT INTO "public"."Algos"
 VALUES ('9', 'Max Consecutive Ones III', 'Medium',
 'Given an array A of 0s and 1s, we may change up to K values from 0 to 1. Return the length of the longest (contiguous) subarray that contains only 1s.', 'Solution to Max Consecutive Ones III', 'Sliding Window');
-
 ```
 
 ## Contributors
