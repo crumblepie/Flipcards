@@ -95,12 +95,13 @@ The following instructions are to get started with Flipcard in development mode:
 
 1. Replace the postgreSQL URI string in `model.js` with your own
 2. Create a new table using a statement such as the below:
+
 ```sql
 CREATE TABLE Algos (
   "_id" serial AUTO INCREMENT KEY,
   "name" varchar NOT NULL,
   "difficulty" varchar NOT NULL,
-  "prompt" text NOT NULL, 
+  "prompt" text NOT NULL,
   "solution" text NOT NULL,
   "pattern" text NOT NULL
 )
