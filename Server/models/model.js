@@ -1,14 +1,14 @@
-const { Pool } = require('pg');
+const { Pool } = require("pg");
 
+// replace with your own SQL URI for more control over the db
 const connectionString = `postgres://iumdeunt:86vr0BmdWB4B7QHkSO0H0Os7Unx7SHgk@castor.db.elephantsql.com/iumdeunt`;
 
 const pool = new Pool({
-  connectionString
+  connectionString,
 });
 
 module.exports = {
   query: (text, params, callback) => {
-    console.log('executed query', text);
     return pool.query(text, params, callback);
   },
 };

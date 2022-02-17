@@ -1,11 +1,11 @@
 {
-  "name": "typescript_template_for_reinforcement",
+  "name": "Flipcards",
   "version": "1.0.0",
-  "description": "",
+  "description": "Flipcards is a simple and fun flashcard game.",
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode development",
@@ -13,7 +13,8 @@
     "start": "webpack serve --open --hot --mode development",
     "test": "mocha -r ts-node/register tests/**/* --require global-jsdom/register",
     "ts-node": "ts-node",
-    "serve": "webpack --mode development & nodemon server/src.ts "
+    "serve": "webpack --mode development & nodemon server/src.ts ",
+    "start-dev": "npm run start & npm run serve"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",

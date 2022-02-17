@@ -4,6 +4,7 @@ import {useState} from "react";
 
 // const Timer = require('./Timer'); 
 import { AiFillPlusCircle } from "react-icons/ai";
+import { MdCatchingPokemon } from "react-icons/md";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 import { addCard } from "../redux/navigationSlice";
@@ -38,13 +39,9 @@ const Nav = () => {
 
   return (
     <div className='nav'>
-      <div></div>
-      <h1>Flashcards</h1>
-      <Timer />
-      <FaSun
-        style={{ color: "var(--sunColor" }}
-        onClick={() => themeToggle()}
-      />
+      <h2>Flipcard</h2>
+      {/* <Timer /> */}
+      <FaSun onClick={themeToggle} style={{ color: "var(--sunColor" }} />
       <span
         style={{
           padding: "1rem",
