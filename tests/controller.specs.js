@@ -19,16 +19,16 @@ describe ('database/controller unit tests', (done) => {
     describe("Get list of algorithms from database", () => {
         describe('GET', () => {
             
-            it ('responds with 201 and with an array of objects', async () => { 
+            it ('responds with 201 and with an array of objects', async (done) => { 
                 await request (server)
                     .get('/')
                     .expect('Content-Type', /json/)
-                    .expect(200)
+                    .expect(200, done)
                     .then((res) => {
                         console.log("POST res.body", res.body);
                         expect(Array.isArray(res.body.rows)).toEqual(true);})
     
-            }).timeout(10000)
+            })
         })
     })
 });
