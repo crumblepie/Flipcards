@@ -22,3 +22,4 @@ app.use((req, res) => res.status(404).send('Error: Page not found'));
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
 });
+

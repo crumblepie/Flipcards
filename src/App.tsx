@@ -6,12 +6,16 @@ import { useEffect } from "react";
 import axios from "axios";
 
 import Main from "./components/Main";
+// const {Main} = require("./components/Main")
 import Nav from "./components/Nav";
+// const {Nav} = require("./components/Nav")
 import Sidebar from "./components/Sidebar";
 import { setQuestions } from "./redux/questionSlice";
 
 import "bootstrap";
+// require("bootstrap"); 
 import "bootstrap/dist/css/bootstrap.min.css";
+// require("bootstrap/dist/css/bootstrap.min.css")
 
 export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
@@ -56,3 +60,4 @@ const App = () => {
 };
 
 export default hot(App);
+// module.exports = hot(App)

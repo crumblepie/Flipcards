@@ -10,7 +10,7 @@
         "target": "es6",
         "allowJs": true, // set this to false to create a pure TS app otherwise this allows JS and TS
         "jsx": "react", // adds support for jsx in .tsx files
-        "esModuleInterop": true, // a default import like import moment from "moment" acts the same as const moment = require("moment").default
+        "esModuleInterop": true, //helps with compilation issues with ES6/commonJS syntax 
     },
     "include": [
         "./src/**/*"

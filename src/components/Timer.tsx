@@ -25,3 +25,4 @@ const Timer = (props: any) => {
 };
 
 export default Timer;
+// module.exports = Timer; 

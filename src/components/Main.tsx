@@ -1,4 +1,8 @@
-import * as React from "react";
+// import * as React from "react";
+// declare function require(name:string);
+// require("react") //--> using let because of namespace issues of importing using require 
+import React from "react"
+// require("./FlipCard")
 import Flipcard from "./Flipcard";
 import Flipcard_Btns from "./Flipcard_Btns";
 
@@ -12,3 +16,4 @@ const Main = () => (
 );
 
 export default Main;
+// module.exports = Main
