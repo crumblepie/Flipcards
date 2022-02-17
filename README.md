@@ -91,7 +91,7 @@ The following instructions are to get started with Flipcard in development mode:
 5. Build a development build `npm run build-dev`
 6. Run unit tests `npm run test`
 
-### Use your own database with Flipcards
+## Use your own database with Flipcards
 
 1. Replace the postgreSQL URI string in `model.js` with your own
 2. Create a new table using a statement such as the below:
@@ -107,7 +107,7 @@ CREATE TABLE Algos (
 )
 ```
 
-### Add new data to the database
+## Add new data to the database
 
 New questions can be added to our relational database with a sql command following this format:
 
