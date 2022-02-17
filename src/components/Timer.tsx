@@ -6,7 +6,7 @@ export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 const Timer = (props: any) => {
-  // const flipCardIndex = useAppSelector((state) => state.question.flipCardIndex);
+  const flipCardIndex = useAppSelector((state) => state.question.flipCardIndex);
 
   const [timer, setTimer] = React.useState(0);
 
@@ -19,9 +19,9 @@ const Timer = (props: any) => {
     interval = setInterval(() => {
       setTimer((timer) => timer + 1);
     }, 1000);
-  }, []);
+  }, [flipCardIndex]);
 
-  return (<div className='timer'>Time elapsed: {timer} seconds</div>);
+  return <div className='timer'>Time elapsed: {timer} seconds</div>;
 };
 
 export default Timer;

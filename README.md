@@ -6,7 +6,7 @@
 <h2 align="center">Flipcards</h2>
 
 <p align="center">
-    <strong>Supercharge your React development process</strong>
+    <strong>Fun and Simple Flashcards</strong>
     <br />
     <a href="https://github.com/crumblepie/flipcards/"><strong>Explore the docs »</strong></a>
     <br />
@@ -48,11 +48,21 @@
 
 ## About Flipcards
 
-Flipcards is a simple-to-use flashcard game to train your computer science algorithm muscles. Start recognising common problem solving patterns today as the first step to conquering those leetcode problems!
+Flipcards is a simple flashcard game to train your computer science algorithm muscles. Start recognising common problem solving patterns today as the first step to conquering those leetcode problems!
+
+This is an open source project and the purpose of this project is not to be a fully featured app. It creates the foundation for a fun flashcard game based on the below system design. Feel free to fork this repo and make it your own, or create a PR to become a contributor to Flipcards.
+
+<img src="./src/img/Flipcard.gif" alt="gif">
+
+<img src="./src/img/Flipcards_Systems_Design.png" alt="systems_design">
 
 ### Features
 
-Coming soon.
+- Add leetcode questions to the relational database
+- Display and navigate through the question collection
+- Light and Dark Mode
+- Run tests in development mode
+- Flip the flashcard to see the answer
 
 ### Built with
 
@@ -61,6 +71,7 @@ Coming soon.
 - [Webpack 5](https://webpack.js.org)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Jest](https://jestjs.io)
+- [Mocha](https://mochajs.org)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [React–Redux](https://react-redux.js.org)
 - [Redux Toolkit](https://redux-toolkit.js.org)
@@ -75,16 +86,36 @@ The following instructions are to get started with Flipcard in development mode:
 
 1. Clone this repo `git clone https://github.com/crumblepie/flipcards`
 2. Install the dependencies `npm install`
-3. Run script for development mode `npm start`. Navigate to `localhost:8080` in your browser if the port does not automatically open.
+3. Run script for development mode `npm start-dev`. Navigate to `localhost:8080` in your browser if the port does not automatically open.
 4. Build a production build `npm run build-prod`
 5. Build a development build `npm run build-dev`
 6. Run unit tests `npm run test`
+
+### Add new questions to the database
+
+New questions can be added to the relational database with a sql command following this format:
+
+```sql
+
+INSERT INTO "public"."Algos"
+VALUES ('9', 'Max Consecutive Ones III', 'Medium',
+'Given an array A of 0s and 1s, we may change up to K values from 0 to 1. Return the length of the longest (contiguous) subarray that contains only 1s.', 'Solution to Max Consecutive Ones III', 'Sliding Window');
+
+```
+
+## Contributors
+
+<a href="https://github.com/crumblepie/flipcards/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=crumblepie/flipcards" />
+</a>
+
+[Rain Hsu](https://github.com/crumblepie) | [Eugene Lee](https://github.com/scc135) | [Jae Hyun Ha](https://github.com/msmintyfresh) | [David Lopez](https://github.com/davidmplopez)
 
 ## Contributing Guide
 
 Contributions are welcome and greatly appreciated.
 
-If you have a suggestion of how to make Flipcart better, please fork the repo and create a pull request to `dev`. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion of how to make Flipcart better, please follow the below instructions or open an issue with the tag "enhancement".
 
 1. Fork this repo
 2. Create your Feature Branch (`git checkout -b` yourgithubhandle/feature-name)

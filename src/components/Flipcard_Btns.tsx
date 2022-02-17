@@ -7,7 +7,6 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 import { setFlipCardIndex } from "../redux/questionSlice";
 
-
 const Flipcard_Btns = () => {
   const dispatch = useAppDispatch();
 
@@ -15,19 +14,25 @@ const Flipcard_Btns = () => {
 
   const changeIndex = (num: number) => {
     dispatch(setFlipCardIndex(num));
-  }
+  };
 
   return (
     <>
-      <span className='card-footer'>
-        <button id='btn back-button' onClick={() => changeIndex(flipCardIndex-1)}>
+      <div className='card-footer'>
+        <button
+          id='btn back-button'
+          onClick={() => changeIndex(flipCardIndex - 1)}
+        >
           Back
         </button>
 
-        <button id='btn next-button' onClick={() => changeIndex(flipCardIndex+1)}>
+        <button
+          id='btn next-button'
+          onClick={() => changeIndex(flipCardIndex + 1)}
+        >
           Next
         </button>
-      </span>
+      </div>
     </>
   );
 };

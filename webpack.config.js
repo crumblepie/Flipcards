@@ -40,7 +40,7 @@ const config = {
       templateContent: ({ htmlWebpackPlugin }) =>
         '<!DOCTYPE html><html><head><meta charset="utf-8"><title>' +
         htmlWebpackPlugin.options.title +
-        '</title></head><body><div id="root"></div></body></html>',
+        '</title><style>' + `@import url('http://fonts.cdnfonts.com/css/pokemon-solid');` +'</style></head><body><div id="root"></div></body></html>',
       filename: "index.html",
     }),
   ],

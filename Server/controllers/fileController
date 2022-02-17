@@ -1,4 +1,3 @@
-const fs = require("fs");
 const path = require("path");
 const db = require("../models/model.js");
 
@@ -6,23 +5,20 @@ const fileController = {};
 
 fileController.getAlgos = async (req, res, next) => {
   try {
-    console.log('in fileController')
-    const qAlgos  = 'SELECT * FROM "public"."public.algo-questions" LIMIT 100';
+    console.log("in fileController");
+    const qAlgos = 'SELECT * FROM "public"."Algos" LIMIT 100';
     const homeQuery = await db.query(qAlgos);
     const details = homeQuery.rows;
     res.locals = details;
     return next();
   } catch (err) {
     return next({
-      log:
-        "fileController.getCars: ERROR: Error getting characters data from algo-questions.json file",
+      log: "fileController.getCars: ERROR: Error getting characters data from algo-questions.json file",
       message: {
-        err:
-          "Error occurred in fileController.getAlgos. Check server logs for more details.",
+        err: "Error occurred in fileController.getAlgos. Check server logs for more details.",
       },
     });
   }
 };
-
 
 module.exports = fileController;
