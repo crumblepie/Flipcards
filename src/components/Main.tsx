@@ -4,11 +4,13 @@
 import React from "react"
 // require("./FlipCard")
 import Flipcard from "./Flipcard";
+import Flipcard_Btns from "./Flipcard_Btns";
 
 const Main = () => (
   <>
     <div className='main'>
       <Flipcard />
+      <Flipcard_Btns />
     </div>
   </>
 );

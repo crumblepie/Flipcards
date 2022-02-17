@@ -13,7 +13,7 @@
     "start": "webpack serve --open --hot --mode development",
     "test": "mocha -r ts-node/register tests/**/* --require global-jsdom/register",
     "ts-node": "ts-node",
-    "serve": "webpack --mode development & nodemon Server/src.ts "
+    "serve": "webpack --mode development & nodemon server/src.ts "
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
@@ -58,6 +58,9 @@
     "mocha": "^9.2.0",
     "prettier": "^2.5.1",
     "regenerator-runtime": "^0.13.9",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.5.1",
+    "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.3",
