@@ -98,7 +98,7 @@ The following instructions are to get started with Flipcard in development mode:
 
 ```sql
 CREATE TABLE Algos (
-  "_id" serial AUTO INCREMENT KEY,
+  "_id" serial AUTO INCREMENT PRIMARY KEY,
   "name" varchar NOT NULL,
   "difficulty" varchar NOT NULL,
   "prompt" text NOT NULL,
