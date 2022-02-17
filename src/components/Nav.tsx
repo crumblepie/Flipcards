@@ -2,7 +2,6 @@ import * as React from "react";
 import Timer from './Timer';
 import {useState} from "react";
 
-// const Timer = require('./Timer'); 
 import { AiFillPlusCircle } from "react-icons/ai";
 import { MdCatchingPokemon } from "react-icons/md";
 import { FaSun, FaMoon } from "react-icons/fa";
@@ -56,4 +55,3 @@ const Nav = () => {
 };
 
 export default Nav;
-// module.exports = Nav; 

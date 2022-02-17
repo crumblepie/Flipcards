@@ -52,11 +52,4 @@ const Sidebar = () => {
   );
 };
 
-<<<<<<< HEAD
-)};
-
 export default Sidebar;
-// module.exports = Sidebar; 
-=======
-export default Sidebar;
->>>>>>> 866b7e29c6b502a46df40133d5f5cb97a1cd5706
