@@ -15,7 +15,7 @@ const questions: algo[] = [
     _id: 1,
     name: "Two Sum",
     difficulty: "Easy",
-    prompt: `Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\nYou can return the answer in any order.`,
+    prompt: `Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.`,
     solution: "test",
     pattern: "Hash Table",
   },
